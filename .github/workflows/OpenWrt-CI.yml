@@ -62,7 +62,9 @@ jobs:
 
       - name: Generate configuration file
         run: |
-          git clone https://github.com/jerrykuku/luci-theme-argon.git package
+          cd package
+          git clone https://github.com/jerrykuku/luci-theme-argon.git
+          cd ..
           mv config.buildinfo .config
           make defconfig
 
