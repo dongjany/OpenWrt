@@ -26,9 +26,8 @@ DEFAULT_PACKAGES:=\
 	uclient-fetch \
 	urandom-seed \
 	luci luci-compat wget-ssl curl ca-certificates htop \
-	default-settings luci-app-upnp miniupnpd-iptables luci-app-wol luci-app-vlmcsd luci-app-ramfree \
+	default-settings luci-app-upnp miniupnpd-iptables bind-host luci-app-ramfree \
 	luci-app-ddns ddns-scripts-cloudflare ddns-scripts_aliyun ddns-scripts_dnspod \
-	luci-app-timecontrol luci-app-control-timewol luci-app-control-webrestriction luci-app-control-weburl \
 	urngd
 
 ifneq ($(CONFIG_SELINUX),)
