@@ -62,9 +62,6 @@ jobs:
 
       - name: Generate configuration file
         run: |
-          cd package
-          git clone https://github.com/home-openwrt/luci-theme-argon.git
-          cd ..
           mv config.buildinfo .config
           make defconfig
 
